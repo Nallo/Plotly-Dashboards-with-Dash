@@ -62,4 +62,6 @@ df.describe() # Statistics about your dataframe
 df.columns # Grab a list of all columns
 df.index # Create an index list
 # You can convert a numpy matrix to a dataframe with:
-mat = np.arange(50).reshape(5,10)
+mat = np.arange(50).reshape(25,2)
+df = pd.DataFrame(data=mat, columns=['A', 'B'])
+df.info()
